@@ -1,3 +1,12 @@
+/* 
+----- Colors -----
+background: #0E3A5D;
+hover: #15507F;
+text: #E6F4FF; 
+------------------
+*/
+
 *{
     margin: 0;
+    /* background-color: #121212; */
 }
