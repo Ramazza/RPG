@@ -1,5 +1,5 @@
 import * as S from './styles';
-import CharacterDropdown from '../../characterDropdown/characterDropdown';
+import CharacterDropdown from '../../CharacterDropdown/characterDropdown';
 
 function Origem() {
 

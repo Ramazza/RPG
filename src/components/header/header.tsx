@@ -13,7 +13,7 @@ function Header() {
                 <S.HeaderContainer>
                     <S.HeaderItem onClick={() => navigate("/personagem")}>Personagem</S.HeaderItem>
                     <S.HeaderItem>Campanha</S.HeaderItem>
-                    <S.HeaderItem onClick={() => navigate("/livro")}>Livro</S.HeaderItem>
+                    <S.HeaderItem onClick={() => navigate("/livro/0")}>Livro</S.HeaderItem>
                 </S.HeaderContainer>
             </S.HeaderWrapper>
         </>
