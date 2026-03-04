@@ -9,6 +9,11 @@ import PlayfairRegular from "../assets/fonts/Playfair_Display/static/PlayfairDis
 import PlayfairBold from "../assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf";
 import PlayfairItalic from "../assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf";
 
+/* Inter */
+import InterRegular from "../assets/fonts/Inter/static/Inter_18pt-Regular.ttf";
+import InterBold from "../assets/fonts/Inter/static/Inter_18pt-Bold.ttf";
+import InterItalic from "../assets/fonts/Inter/static/Inter_18pt-BoldItalic.ttf";
+
 export const GlobalFonts = createGlobalStyle`
 
   @font-face {
@@ -46,9 +51,30 @@ export const GlobalFonts = createGlobalStyle`
     font-style: italic;
   }
 
+  @font-face {
+    font-family: 'Inter';
+    src: url(${InterRegular}) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+   @font-face {
+    font-family: 'Inter';
+    src: url(${InterBold}) format('truetype');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url(${InterItalic}) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+
   body {
     margin: 0;
-    font-family: 'PlayfairDisplayCustom', serif;
+    font-family: 'Inter';
     background-color: #0f0f0f;
     color: #E6F4FF;
   }

@@ -10,7 +10,6 @@ export const CharacterOptionsWrapper = styled.div`
     justify-content: center;
     padding: 2rem;
     color: white;
-    font-family: 'CinzelCustom';
 `;
 
 export const CharacterOption = styled.h3`

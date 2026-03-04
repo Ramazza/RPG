@@ -12,10 +12,9 @@ export const Wrapper = styled.div`
   gap: 2rem;
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   line-height: 1.6;
   word-spacing: 4px;
   text-align: justify;
   font-weight: 200;
-  padding-bottom: 2rem;
 `;

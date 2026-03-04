@@ -5,7 +5,7 @@ export const OrigemWrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const OrigemDescription = styled.h4`
+export const OrigemDescription = styled.p`
   line-height: 1.6;
   word-spacing: 4px;
   text-align: justify;
@@ -15,8 +15,8 @@ export const OrigemDescription = styled.h4`
 export const Search = styled.input`
   margin: 1rem 0 1rem 0;
   width: 100%;
-  background-color: #1e1e1e;
-  border: none;
+  background-color: #161a21;
+  border: 1px solid rgba(59, 164, 247, 0.2);
   border-radius: 4px;
   height: 2rem;
   font-size: large;

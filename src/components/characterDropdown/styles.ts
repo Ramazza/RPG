@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #1e1e1e;
-  border-radius: 4px;
-  padding: 1rem;
+  background: #161a21;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(59, 164, 247, 0.2);
+  transition: all 0.2s ease;
 `;
 
 export const Wrapper = styled.div`
+  background-color: #161a21;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,36 +17,36 @@ export const Wrapper = styled.div`
 `;
 
 export const DropButton = styled.div`
-  background-color: #0E3A5D;
+  background: linear-gradient(135deg, #3ba4f7, #5cc1ff);
+  font-weight: 600;
+  color: #0f1115;
   padding: 6px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
   transition: transform 0.2s ease;
   cursor: pointer;
 
   &:hover {
-    background-color: #15507F;
-    color: #E6F4FF;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(59, 164, 247, 0.4);
   }
 `;
 
 export const OrigemName = styled.div`
-  
+  background-color: #161a21;
 `;
 
 export const OrigemAdd = styled.div`
-  background-color: #0E3A5D;
+  background: linear-gradient(135deg, #3ba4f7, #5cc1ff);
+  font-weight: 600;
+  color: #0f1115;
   padding: 6px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
   transition: transform 0.2s ease;
   cursor: pointer;
 
   &:hover {
-    background-color: #15507F;
-    color: #E6F4FF;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(59, 164, 247, 0.4);
   }
 `;
 
@@ -58,9 +61,10 @@ export const OpenWrapper = styled.div`
   
 `;
 
-export const OrigemDescription = styled.div`
+export const OrigemDescription = styled.p`
   line-height: 1.6;
   word-spacing: 4px;
   text-align: justify;
   font-weight: 200;
+  background-color: #161a21;
 `;

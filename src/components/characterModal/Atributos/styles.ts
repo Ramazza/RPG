@@ -6,7 +6,6 @@ export const AtributosWrapper = styled.div`
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  font-family: 'PlayfairDisplayCustom';
   color: #E6F4FF;
   text-align: justify;
   height: calc(100vh - 10rem);
@@ -14,7 +13,7 @@ export const AtributosWrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const Description = styled.h2`
+export const Description = styled.p`
   width: 40%;
   height: 60%;
   line-height: 1.6;
@@ -44,7 +43,7 @@ export const Atributos = styled.div`
   padding: 1rem 0 1rem 0;
 `;
 
-export const AtributoText = styled.h3`
+export const AtributoText = styled.p`
   
 `;
 

@@ -53,13 +53,13 @@ export const HeaderItem = styled.h3`
     padding: 5px;
     font-family: 'CinzelCustom', serif;
     font-size: 30px;
-    color: #77d6f1;
+    color: #3ba4f7;
     background-color: #0c0c0c;
     cursor: pointer;
     text-decoration: none;
 
     &:hover{
-        color: #ade6f7;
+        color: #5cc1ff;
         transform: translateY(-1px);
     }
 `;

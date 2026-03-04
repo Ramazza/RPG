@@ -14,16 +14,17 @@ export const AddCharacter = styled.div`
     inset-inline-start: 90vw;
     inset-block-start: 1rem;
     text-align: center;
-    font-family: 'PlayfairDisplayCustom';
-    font-weight: bold;
+
+    background: linear-gradient(135deg, #3ba4f7, #5cc1ff);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #0f1115;
     cursor: pointer;
-    transition: transform 0.2s ease;
-    background-color: #0E3A5D;
-    color: #E6F4FF;
-    border-radius: 3px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
 
     &:hover {
-        background-color: #15507F;
-    }
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgba(59, 164, 247, 0.4);
+}
 `;

@@ -1,5 +1,6 @@
 import * as S from './styles';
 import ClassCard from './ClassCard/ClassCard';
+import Italic from '../../FontStyles/Italic';
 
 function Classe() {
 
@@ -11,7 +12,9 @@ function Classe() {
                 Sua classe indica o treinamento que você recebeu na Ordem para enfrentar os perigos do Outro Lado.
                 Em termos de jogo, é a sua característica mais importante, pois define o que você faz e qual é o seu papel no grupo de investigadores.
 
-                Perícias concedidas serão adicionadas automaticamente. Perícias opcionais podem ser adicionadas ao agente após sua criação.
+                <Italic 
+                    text='Perícias concedidas serão adicionadas automaticamente. Perícias opcionais podem ser adicionadas ao agente após sua criação.'
+                />
             </S.Description>
             <ClassCard
                 name="Combatente"

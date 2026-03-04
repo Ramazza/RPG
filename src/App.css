@@ -4,9 +4,34 @@ background: #0E3A5D;
 hover: #15507F;
 text: #E6F4FF; 
 ------------------
+
+🔹 Fundo principal:
+
+#0f1115 (não use preto puro)
+
+🔹 Fundo secundário (cards):
+
+#161a21
+
+🔹 Azul principal:
+
+#3ba4f7
+
+🔹 Azul hover:
+
+#5cc1ff
+
+🔹 Texto principal:
+
+#e6e6e6
+
+🔹 Texto secundário:
+
+#9ca3af
 */
 
 *{
     margin: 0;
-    /* background-color: #121212; */
+    background-color: #0f1115;
+    color: #e6e6e6;
 }

@@ -23,6 +23,6 @@ export const Input = styled.input`
   outline: none;
   caret-color: white;
   color: white;
-  border: 1px solid #2f2f2f;
+  border: 2px solid rgba(59, 164, 247, 0.2);
   padding: 0 0 0 8px;
 `;
