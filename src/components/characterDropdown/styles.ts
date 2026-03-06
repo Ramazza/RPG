@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding: 24px;
   border: 1px solid rgba(59, 164, 247, 0.2);
   transition: all 0.2s ease;
+  margin-bottom: 1rem;
 `;
 
 export const Wrapper = styled.div`
@@ -13,7 +14,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40%;
 `;
 
 export const DropButton = styled.div`
@@ -31,7 +31,7 @@ export const DropButton = styled.div`
   }
 `;
 
-export const OrigemName = styled.div`
+export const OrigemName = styled.h3`
   background-color: #161a21;
 `;
 
@@ -67,4 +67,5 @@ export const OrigemDescription = styled.p`
   text-align: justify;
   font-weight: 200;
   background-color: #161a21;
+  color: #9ca3af;
 `;

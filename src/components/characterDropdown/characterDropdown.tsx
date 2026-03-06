@@ -1,7 +1,13 @@
-import { useState } from "react";
 import * as S from "./styles";
+import { useState } from "react";
 
-function CharacterDropdown() {
+interface CharacterDropdownProps {
+  name: string;
+  info: string;
+}
+
+function CharacterDropdown({ name, info }: CharacterDropdownProps) {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -11,29 +17,33 @@ function CharacterDropdown() {
   return (
     <S.Container>
       <S.Wrapper>
+
         <S.DropButton onClick={handleToggle}>
           Drop
         </S.DropButton>
 
-        <S.OrigemName>teste</S.OrigemName>
-        <S.OrigemAdd>Escolher</S.OrigemAdd>
+        <S.OrigemName>
+          {name}
+        </S.OrigemName>
+
+        <S.OrigemAdd>
+          Escolher
+        </S.OrigemAdd>
+
       </S.Wrapper>
 
       {isOpen && (
         <>
-        <S.Divider />
-        <S.OpenWrapper>
-          <S.OrigemDescription>
-            Você era um pesquisador ou professor universitário. De forma proposital ou não, seus estudos tocaram em assuntos misteriosos e chamaram a 
-            atenção da Ordo Realitas.
+          <S.Divider />
 
-            Perícias treinadas. Ciências e Investigação.
-
-            Saber é Poder. Quando faz um teste usando Intelecto, você pode gastar 2 PE para receber +5 nesse teste.
-          </S.OrigemDescription>
-        </S.OpenWrapper>
+          <S.OpenWrapper>
+            <S.OrigemDescription>
+              {info}
+            </S.OrigemDescription>
+          </S.OpenWrapper>
         </>
       )}
+
     </S.Container>
   );
 }

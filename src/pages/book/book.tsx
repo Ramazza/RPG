@@ -9,7 +9,7 @@ function Book() {
    return(
        <>
        <Header/>
-       <S.PDF src={`../../../public/pdf/Ordem Paranormal RPG.pdf#page=${page}`}></S.PDF>
+       <S.PDF src={`/pdf/Ordem Paranormal RPG.pdf#page=${page}`} />
        </>
    );
 }

@@ -29,6 +29,7 @@ export const Description = styled.p`
   text-align: justify;
   font-weight: 200;
   background-color: #161a21;
+  color: #9ca3af;
 `;
 
 export const InnerWrapper = styled.div`

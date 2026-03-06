@@ -49,17 +49,39 @@ export const HeaderContainer = styled.div`
     background-color: #0c0c0c;
 `;
 
-export const HeaderItem = styled.h3`
-    padding: 5px;
+export const HeaderItem = styled.h3<{ $active?: boolean }>`
+    position: relative;
+
+    padding: 0px;
     font-family: 'CinzelCustom', serif;
     font-size: 30px;
-    color: #3ba4f7;
+
+    color: ${({ $active }) => ($active ? "#5cc1ff" : "#3ba4f7")};
+
     background-color: #0c0c0c;
     cursor: pointer;
-    text-decoration: none;
+
+    transition: all 0.2s ease;
 
     &:hover{
         color: #5cc1ff;
         transform: translateY(-1px);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -0px;
+        left: 0;
+        width: ${({ $active }) => ($active ? "100%" : "0%")};
+        height: 2px;
+
+        background: linear-gradient(90deg, #3ba4f7, #5cc1ff);
+
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
     }
 `;

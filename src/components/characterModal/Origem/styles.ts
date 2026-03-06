@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OrigemWrapper = styled.div`
-  width: 60%;
+  width: 60vw;
   margin: 0 auto;
 `;
 
@@ -26,7 +26,7 @@ export const Search = styled.input`
 `;
 
 export const OrigemOptions = styled.div`
-  
+  white-space: pre-line;
 `;
 
 export const Option = styled.div`
