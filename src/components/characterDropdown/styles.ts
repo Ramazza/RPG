@@ -20,7 +20,7 @@ export const DropButton = styled.div`
   background: linear-gradient(135deg, #3ba4f7, #5cc1ff);
   font-weight: 600;
   color: #0f1115;
-  padding: 6px;
+  padding: 6px 6px 3px 6px;
   border-radius: 8px;
   transition: transform 0.2s ease;
   cursor: pointer;

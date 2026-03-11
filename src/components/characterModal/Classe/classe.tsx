@@ -2,7 +2,12 @@ import * as S from './styles';
 import ClassCard from './ClassCard/ClassCard';
 import Italic from '../../FontStyles/Italic';
 
-function Classe() {
+interface ClasseProps {
+    goToToqueFinal: () => void;
+}
+
+function Classe({goToToqueFinal}: ClasseProps) {
+
 
    return(
        <>
@@ -28,6 +33,7 @@ function Classe() {
                     Além de treinar seu corpo, o combatente também é perito em liderar seus aliados em batalha e cuidar de seu equipamento de combate, 
                     sempre preparado para assumir a linha de frente quando a coisa fica feia."
                 page={32}
+                onChoose={goToToqueFinal}
             />
             <ClassCard 
                 name="Especialista"
@@ -42,6 +48,7 @@ function Classe() {
                     O que une todos os especialistas é sua incrível capacidade de aprender e improvisar usando seu intelecto e conhecimento avançado, 
                     que pode tirar o grupo todo dos mais diversos tipos de enrascadas."
                 page={36}
+                onChoose={goToToqueFinal}
             />
             <ClassCard 
                 name="Ocultista"
@@ -58,6 +65,7 @@ function Classe() {
                     Ocultistas aplicam seu conhecimento acadêmico e suas capacidades de conjuração de rituais em missões para investigar e combater 
                     o Paranormal em todas as suas formas, principalmente quando munição convencional não é o suficiente para lidar com a tarefa."            
                 page={40}
+                onChoose={goToToqueFinal}
             />
         </S.Wrapper>
        </S.Container>

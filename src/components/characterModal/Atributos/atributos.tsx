@@ -48,6 +48,7 @@ function Atributos() {
             <Bold 
                 text='O valor máximo inicial que você pode ter em cada atributo é 3.'
             />
+            <S.MaxPoints>Pontos Restantes: {pontosRestantes}</S.MaxPoints>
             <S.InnerWrapper>
                 {atributosInfo.map((atributo) => (
                     <AtributosCard 

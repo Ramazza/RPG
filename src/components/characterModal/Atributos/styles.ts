@@ -17,6 +17,10 @@ export const Description = styled.p`
   align-items: center;
 `;
 
+export const MaxPoints = styled.div`
+  padding-bottom: 1rem;
+`;
+
 export const InnerWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr; 

@@ -14,15 +14,16 @@ export const OrigemDescription = styled.p`
 
 export const Search = styled.input`
   margin: 1rem 0 1rem 0;
-  width: 100%;
+  width: calc(100% - 1rem);
   background-color: #161a21;
   border: 1px solid rgba(59, 164, 247, 0.2);
-  border-radius: 4px;
-  height: 2rem;
+  border-radius: 16px;
+  height: 3rem;
   font-size: large;
   outline: none;
   caret-color: white;
   color: white;
+  padding-left: 1rem;
 `;
 
 export const OrigemOptions = styled.div`

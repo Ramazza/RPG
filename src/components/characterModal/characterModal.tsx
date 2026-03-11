@@ -8,19 +8,24 @@ import { useState } from 'react';
 
 function CharacterModal() {
 
-    const [characterStep, setCharacterStep] = useState<"atributos" | "origem" | "classe" | "toqueFinal">("atributos");
+    const [characterStep, setCharacterStep] = useState<
+        "atributos" | "origem" | "classe" | "toqueFinal"
+    >("atributos");
 
     return(
         <>
             <Header />
             <S.CharacterWrapper>
+
                 <S.CharacterOptionsWrapper>
+
                     <S.CharacterOption
                         $active={characterStep === "atributos"}
                         onClick={() => setCharacterStep("atributos")}
                     >
                         Atributos
                     </S.CharacterOption>
+
                     <S.CharacterOption
                         $active={characterStep === "origem"}
                         onClick={() => setCharacterStep("origem")}
@@ -41,11 +46,21 @@ function CharacterModal() {
                     >
                         Toques Finais
                     </S.CharacterOption>
+
                 </S.CharacterOptionsWrapper>
+
                 {characterStep === "atributos" && <Atributos />}
-                {characterStep === "origem" && <Origem />}
-                {characterStep === "classe" && <Classe />}
+
+                {characterStep === "origem" && (
+                    <Origem goToClasse={() => setCharacterStep("classe")} />
+                )}
+
+                {characterStep === "classe" && (
+                    <Classe goToToqueFinal={() => setCharacterStep("toqueFinal")} />
+                )}
+
                 {characterStep === "toqueFinal" && <ToqueFinal />}
+
             </S.CharacterWrapper>
         </>
     );

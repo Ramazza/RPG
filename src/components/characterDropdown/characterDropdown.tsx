@@ -1,12 +1,14 @@
 import * as S from "./styles";
 import { useState } from "react";
+import { ArrowBigDown } from 'lucide-react';
 
 interface CharacterDropdownProps {
   name: string;
   info: string;
+  onChoose: () => void;
 }
 
-function CharacterDropdown({ name, info }: CharacterDropdownProps) {
+function CharacterDropdown({ name, info, onChoose }: CharacterDropdownProps) {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,14 +21,23 @@ function CharacterDropdown({ name, info }: CharacterDropdownProps) {
       <S.Wrapper>
 
         <S.DropButton onClick={handleToggle}>
-          Drop
+          <ArrowBigDown 
+            size={20}
+            color="black"
+            fill="black"
+            style={{
+              backgroundColor: "transparent",
+              transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+              transition: "0.2s"
+            }}
+          />
         </S.DropButton>
 
         <S.OrigemName>
           {name}
         </S.OrigemName>
 
-        <S.OrigemAdd>
+        <S.OrigemAdd onClick={onChoose}>
           Escolher
         </S.OrigemAdd>
 

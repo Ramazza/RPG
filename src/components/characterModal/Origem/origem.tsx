@@ -3,8 +3,27 @@ import CharacterDropdown from '../../CharacterDropdown/characterDropdown';
 import Bold from '../../FontStyles/Bold';
 import Italic from '../../FontStyles/Italic';
 import { origemInfo } from './origemInfo';
+import { useState } from 'react';
 
-function Origem() {
+interface OrigemProps {
+  goToClasse: () => void;
+}
+
+function normalizeText(text: string) {
+    return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+}
+
+function Origem({ goToClasse }: OrigemProps) {
+
+    const [search, setSearch] = useState('');
+
+    const filtredOrigens = origemInfo.filter((origem) => 
+        normalizeText(origem.name).includes(normalizeText(search)) ||
+        normalizeText(origem.info).includes(normalizeText(search))
+    );
 
     return(
         <S.OrigemWrapper>
@@ -22,15 +41,20 @@ function Origem() {
                 <Italic text='Perícias concedidas serão adicionadas automaticamente. Perícias opcionais podem ser adicionadas ao agente após sua criação.'/>
             </S.OrigemDescription>
 
-            <S.Search placeholder='Buscar'/>
+            <S.Search 
+                placeholder='Buscar'
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+            />
 
             <S.OrigemOptions>
 
-                {origemInfo.map((origem) => (
+                {filtredOrigens.map((origem) => (
                     <CharacterDropdown
                         key={origem.id}
                         name={origem.name}
                         info={origem.info}
+                        onChoose={goToClasse}
                     />
                 ))}
 
