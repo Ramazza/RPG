@@ -1,6 +1,6 @@
 import * as S from './styles';
-import PlayerInput from '../../CharacterForm/playerInput/PlayerInput';
-import FormInput from '../../CharacterForm/formInput/FormInput';
+import PlayerInput from '../../CharacterForm/PlayerInput/PlayerInput';
+import FormInput from '../../CharacterForm/FormInput/FormInput';
 
 function ToqueFinal() {
 
