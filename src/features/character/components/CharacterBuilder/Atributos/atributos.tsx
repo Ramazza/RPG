@@ -1,8 +1,8 @@
 import * as S from './styles';
 import Bold from '@/components/FontStyles/Bold';
-import AtributosCard from './AtributosCard';
-import { atributosInfo } from './atributosInfo';
-import type { Atributo } from './atributosInfo';
+import AtributosCard from './AtributosCard/AtributosCard';
+import { atributosInfo } from './AtributosInfo';
+import type { Atributo } from './AtributosInfo';
 import { useState } from 'react';
 
 function Atributos() {

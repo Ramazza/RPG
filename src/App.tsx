@@ -1,8 +1,8 @@
 import './App.css';
-import Home from './pages/Home/home';
-import Character from './pages/Character/character';
+import Home from './pages/Home/Home';
+import Character from './pages/Character/Character';
 import CharacterBuilder from './features/character/components/CharacterBuilder/CharacterBuilder';
-import Book from './pages/Book/book';
+import Book from './pages/Book/Book';
 import { Routes, Route } from 'react-router-dom';
 import { GlobalFonts } from './styles/GlobalFonts'; 
 

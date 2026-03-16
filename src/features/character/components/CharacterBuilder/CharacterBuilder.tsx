@@ -1,9 +1,9 @@
 import * as S from './styles';
-import Header from '../../../../components/Header/header';
-import Atributos from './Atributos/atributos';
-import Origem from './Origem/origem';
-import Classe from './Classe/classe';
-import ToqueFinal from './ToqueFinal/toqueFinal';
+import Header from '../../../../components/Header/Header';
+import Atributos from './Atributos/Atributos';
+import Origem from './Origem/Origem';
+import Classe from './Classe/Classe';
+import ToqueFinal from './ToqueFinal/ToqueFinal';
 import { useState } from 'react';
 
 function CharacterBuilder() {

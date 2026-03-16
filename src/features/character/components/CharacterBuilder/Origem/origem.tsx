@@ -1,8 +1,8 @@
 import * as S from './styles';
-import CharacterDropdown from '../../CharacterDropdown/characterDropdown';
+import CharacterDropdown from '../../CharacterDropdown/CharacterDropdown';
 import Bold from "@/components/FontStyles/Bold"
 import Italic from '@/components/FontStyles/Italic';
-import { origemInfo } from './origemInfo';
+import { origemInfo } from './OrigemInfo';
 import { useState } from 'react';
 
 interface OrigemProps {

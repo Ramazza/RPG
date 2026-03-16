@@ -1,5 +1,5 @@
 import * as S from './styles'
-import Header from '../../components/Header/header';
+import Header from '@/components/Header/Header';
 
 function Home () {
 
