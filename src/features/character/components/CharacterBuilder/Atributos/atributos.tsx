@@ -1,5 +1,5 @@
 import * as S from './styles';
-import Bold from '../../FontStyles/Bold';
+import Bold from '@/components/FontStyles/Bold';
 import AtributosCard from './AtributosCard';
 import { atributosInfo } from './atributosInfo';
 import type { Atributo } from './atributosInfo';

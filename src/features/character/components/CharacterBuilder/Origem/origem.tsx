@@ -1,7 +1,7 @@
 import * as S from './styles';
 import CharacterDropdown from '../../CharacterDropdown/characterDropdown';
-import Bold from '../../FontStyles/Bold';
-import Italic from '../../FontStyles/Italic';
+import Bold from "@/components/FontStyles/Bold"
+import Italic from '@/components/FontStyles/Italic';
 import { origemInfo } from './origemInfo';
 import { useState } from 'react';
 

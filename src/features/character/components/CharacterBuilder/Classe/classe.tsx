@@ -1,6 +1,6 @@
 import * as S from './styles';
 import ClassCard from './ClassCard/ClassCard';
-import Italic from '../../FontStyles/Italic';
+import Italic from '@/components/FontStyles/Italic';
 
 interface ClasseProps {
     goToToqueFinal: () => void;
