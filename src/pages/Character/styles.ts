@@ -28,3 +28,16 @@ export const AddCharacter = styled.div`
         box-shadow: 0 3px 8px rgba(59, 164, 247, 0.4);
 }
 `;
+
+export const Characters = styled.h3`
+    padding-left: 10vw;
+    padding-bottom: 2rem;
+`;
+
+export const InnerWrapper = styled.div`
+  display: grid;
+  margin: 0 auto;
+  width: 80vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+`;
