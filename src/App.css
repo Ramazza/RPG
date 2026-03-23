@@ -32,6 +32,9 @@ text: #E6F4FF;
 
 *{
     margin: 0;
-    background-color: #0f1115;
     color: #e6e6e6;
+}
+
+body {
+    background-color: #0f1115;
 }

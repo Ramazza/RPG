@@ -5,6 +5,7 @@ import CharacterBuilder from './features/character/components/CharacterBuilder/C
 import Book from './pages/Book/Book';
 import { Routes, Route } from 'react-router-dom';
 import { GlobalFonts } from './styles/GlobalFonts'; 
+import CharacterInfo from './pages/CharacterInfo/CharacterInfo';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='personagem' element={<Character/>}></Route>
         <Route path='novo-personagem' element={<CharacterBuilder/>}></Route>
         <Route path='livro/:page' element={<Book/>}></Route>
+        <Route path='teste' element={<CharacterInfo/>}></Route>
       </Routes>
     </>
   )
