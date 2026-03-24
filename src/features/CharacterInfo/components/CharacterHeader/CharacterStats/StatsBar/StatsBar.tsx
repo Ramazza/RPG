@@ -1,4 +1,5 @@
 import * as S from './styles';
+import { ChevronsLeft, ChevronsRight,  ChevronLeft, ChevronRight} from 'lucide-react';
 
 type Props = {
   label: string;
@@ -21,8 +22,12 @@ function StatsBar({label, value, max, color, onChange}: Props) {
 
                 <S.Content>
                 <div>
-                    <S.Button onClick={() => onChange?.(-5)}>{"<<"}</S.Button>
-                    <S.Button onClick={() => onChange?.(-1)}>{"<"}</S.Button>
+                    <S.Button onClick={() => onChange?.(-5)}>
+                        <ChevronsLeft />
+                    </S.Button>
+                    <S.Button onClick={() => onChange?.(-1)}>
+                        <ChevronLeft />
+                    </S.Button>
                 </div>
 
                 <S.Value>
@@ -30,8 +35,12 @@ function StatsBar({label, value, max, color, onChange}: Props) {
                 </S.Value>
 
                 <div>
-                    <S.Button onClick={() => onChange?.(1)}>{">"}</S.Button>
-                    <S.Button onClick={() => onChange?.(5)}>{">>"}</S.Button>
+                    <S.Button onClick={() => onChange?.(1)}>
+                        <ChevronRight />
+                    </S.Button>
+                    <S.Button onClick={() => onChange?.(5)}>
+                        <ChevronsRight />
+                    </S.Button>
                 </div>
                 </S.Content>
             </S.BarWrapper>

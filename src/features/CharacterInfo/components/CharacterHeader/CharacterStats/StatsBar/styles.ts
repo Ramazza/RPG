@@ -40,7 +40,8 @@ export const Content = styled.div`
 `;
 
 export const Value = styled.span`
-  
+  display: flex;
+  align-items: center;
 `;
 
 export const Button = styled.button`

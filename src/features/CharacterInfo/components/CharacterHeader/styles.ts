@@ -11,8 +11,10 @@ export const Wrapper = styled.div`
   gap: 2rem;
 `;
 
-export const ProfileImg = styled.img`
-  
+export const ProfileImg = styled.div`
+  padding: 1rem;
+  background-color: #222;
+  border: 1px solid gray;
 `;
 
 export const InnerWrapper = styled.div`
@@ -21,18 +23,18 @@ export const InnerWrapper = styled.div`
   gap: 1rem;
 `;
 
-export const Name = styled.p`
-  
+export const TextContainer = styled.div`
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
 `;
 
-export const Player = styled.p`
-  
+export const Name = styled.h3`
+  width: 6vw;
+  color: #9ca3af;
 `;
 
-export const Origem = styled.p`
-  
-`;
-
-export const Classe = styled.p`
-  
+export const Value = styled.p`
+  width: 20vw;
+  border-bottom: 1px solid white;
 `;
